@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container {
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-gap: 20px;
+		}
+		.item1 {
+			padding: 25px;
+		}
+		.newItems {
+			display: grid; /* Make it a grid container */
+			grid-column: span 12; /* Ensure it spans all 12 columns */
+			grid-template-columns: repeat(12, 1fr); /* Define 12 columns */
+		}
+		.newSection {
+			display: grid;
+			grid-column: span 12;
+			grid-template-columns: repeat(12, 1fr); /* Define 12 columns */
+			grid-gap: 10px;
+		}
+		.sec {
+			padding: 10px;
+			border-style: solid;
+			grid-column: span 4;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="item1" style="border: 1px solid gray; grid-column: span 12;">
+			Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Nulla at impedit amet aut nisi voluptatum, tempore quod nobis libero ex corrupti necessitatibus ipsum explicabo iste accusamus culpa ipsam illo, exercitationem.
+		</div>
+		<div class="item1" style="border: 1px solid gray; grid-column: span 12;">
+			Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Nulla at impedit amet aut nisi voluptatum, tempore quod nobis libero ex corrupti necessitatibus ipsum explicabo iste accusamus culpa ipsam illo, exercitationem.
+		</div>
+		<div class="newItems">
+			<div class="item1" style="border: 1px solid gray; grid-column: span 2;">
+				Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Nulla at impedit amet aut nisi voluptatum, tempore quod nobis libero ex corrupti necessitatibus ipsum explicabo iste accusamus culpa ipsam illo, exercitationem.
+			</div>
+			<div class="item1" style="border: 1px solid gray; grid-column: span 10;">
+				Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Nulla at impedit amet aut nisi voluptatum, tempore quod nobis libero ex corrupti necessitatibus ipsum explicabo iste accusamus culpa ipsam illo, exercitationem.
+			</div>
+		</div>
+		<div class="newSection">
+			<div class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quo, aperiam veritatis unde consectetur, voluptate velit perspiciatis itaque harum quisquam, est dicta vel ex obcaecati, iure vitae voluptatum ipsum nihil.</div>
+			<div class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quo, aperiam veritatis unde consectetur, voluptate velit perspiciatis itaque harum quisquam, est dicta vel ex obcaecati, iure vitae voluptatum ipsum nihil.</div>
+			<div class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quo, aperiam veritatis unde consectetur, voluptate velit perspiciatis itaque harum quisquam, est dicta vel ex obcaecati, iure vitae voluptatum ipsum nihil.</div>
+			<div class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quo, aperiam veritatis unde consectetur, voluptate velit perspiciatis itaque harum quisquam, est dicta vel ex obcaecati, iure vitae voluptatum ipsum nihil.</div>
+			<div class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quo, aperiam veritatis unde consectetur, voluptate velit perspiciatis itaque harum quisquam, est dicta vel ex obcaecati, iure vitae voluptatum ipsum nihil.</div>
+			<div class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quo, aperiam veritatis unde consectetur, voluptate velit perspiciatis itaque harum quisquam, est dicta vel ex obcaecati, iure vitae voluptatum ipsum nihil.</div>
+			<div class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quo, aperiam veritatis unde consectetur, voluptate velit perspiciatis itaque harum quisquam, est dicta vel ex obcaecati, iure vitae voluptatum ipsum nihil.</div>
+		</div>	
+	</div>
+</body>
+</html>

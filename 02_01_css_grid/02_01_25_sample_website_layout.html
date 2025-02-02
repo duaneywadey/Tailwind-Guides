@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+		.container {
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			grid-template-rows: repeat(12, 1fr);
+		}
+		.header {
+			background-color: skyblue;
+			gap:  25px;
+			border: 1px solid black;
+			grid-row: span 1;
+			grid-column: span 12;
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+		}
+		.bodyContent {
+			text-align: center;
+			background-color: aliceblue;
+			padding: 25px;
+			gap:  25px;
+			border: 1px solid black;
+			grid-row: span 10;
+			grid-column: span 12;
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+		}
+
+		.footer {
+			background-color: pink;
+			padding: 25px;
+			gap:  25px;
+			border: 1px solid black;
+			grid-row: span 1;
+			grid-column: span 12;
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+		}
+
+		.el {
+			border: 1px solid;
+			padding: 10px;
+		}
+
+		.header .el {
+			grid-column: span 12;
+		}
+		.bodyContent .el {
+			grid-column: span 2;
+		}
+		.footer .el {
+			grid-column: span 4;
+		}
+
+		@media (max-width: 800px) {
+			.bodyContent .el {
+				grid-column: span 6;
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="el">
+				<h1>Header</h1>
+			</div>
+		</div>
+		<div class="bodyContent">
+			<div class="el">
+				Body: Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Quis praesentium, quo illo consequatur cumque nemo rerum natus illum ex officia assumenda, dolore fugiat mollitia, aliquid quisquam totam. Laborum, quisquam, provident! Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Inventore mollitia, fuga sunt voluptates sapiente doloremque voluptatem perspiciatis ducimus dolorem laboriosam corrupti eius impedit quisquam ad, quam asperiores, exercitationem totam vel.
+			</div>
+			<div class="el">
+				Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Quis praesentium, quo illo consequatur cumque nemo rerum natus illum ex officia assumenda, dolore fugiat mollitia, aliquid quisquam totam. Laborum, quisquam, provident! Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Ut animi esse aliquam aperiam hic ratione alias, quo unde mollitia vel ex praesentium odio, quis veniam culpa omnis magni ab, dolorum.
+			</div>
+			<div class="el">
+				Body: Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Quis praesentium, quo illo consequatur cumque nemo rerum natus illum ex officia assumenda, dolore fugiat mollitia, aliquid quisquam totam. Laborum, quisquam, provident! Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Inventore mollitia, fuga sunt voluptates sapiente doloremque voluptatem perspiciatis ducimus dolorem laboriosam corrupti eius impedit quisquam ad, quam asperiores, exercitationem totam vel.
+			</div>
+			<div class="el">
+				Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Quis praesentium, quo illo consequatur cumque nemo rerum natus illum ex officia assumenda, dolore fugiat mollitia, aliquid quisquam totam. Laborum, quisquam, provident! Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Ut animi esse aliquam aperiam hic ratione alias, quo unde mollitia vel ex praesentium odio, quis veniam culpa omnis magni ab, dolorum.
+			</div>
+			<div class="el">
+				Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Quis praesentium, quo illo consequatur cumque nemo rerum natus illum ex officia assumenda, dolore fugiat mollitia, aliquid quisquam totam. Laborum, quisquam, provident! Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Ut animi esse aliquam aperiam hic ratione alias, quo unde mollitia vel ex praesentium odio, quis veniam culpa omnis magni ab, dolorum.
+			</div>
+			<div class="el">
+				Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Quis praesentium, quo illo consequatur cumque nemo rerum natus illum ex officia assumenda, dolore fugiat mollitia, aliquid quisquam totam. Laborum, quisquam, provident! Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Ut animi esse aliquam aperiam hic ratione alias, quo unde mollitia vel ex praesentium odio, quis veniam culpa omnis magni ab, dolorum.
+			</div>
+		</div>
+		<div class="footer">
+			<div class="el">
+				<h1>Footer</h1>
+			</div>
+			<div class="el">
+				<h1>Footer</h1>
+			</div>
+			<div class="el">
+				<h1>Footer</h1>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

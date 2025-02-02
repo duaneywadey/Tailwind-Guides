@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid, devchallenge.io - Task 3.1</title>
+    <style>
+      .task-3-1.container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 25px;
+        background-color: ghostwhite;
+      }
+
+      /*Start from column 1 then span 12 columns*/
+      .task-3-1 .header {
+        grid-column: 1 / span 12;
+        border-style: solid;
+        border-color: red;
+      }
+
+      /*Start from column 1 then span 12 columns*/
+      .task-3-1 .navigation {
+        grid-column: 1 / span 12;
+        border-style: solid;
+        border-color: red;
+      }
+
+      .task-3-1 .sidebar {
+        grid-column: 1 / span 2;
+        border-style: solid;
+        border-color: red;
+      }
+
+      .task-3-1 .main {
+        grid-column: 3 / span 10;
+        border-style: solid;
+        border-color: red;
+      }
+
+      .task-3-1 .ads {
+        grid-column: 1 / span 6;
+        border-style: solid;
+        border-color: red;
+      }
+
+      .task-3-1 .footer {
+        grid-column: 7 / span 6;
+        border-style: solid;
+        border-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="task-3-1 container">
+
+      <div class="header">header - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, atque laborum ducimus dolor necessitatibus doloremque iure eius, sed! Consequatur ea, distinctio ipsa laudantium id quos ipsam minima, corrupti quaerat voluptatem?</div>
+
+      <div class="navigation">navigation - Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime odio hic consequatur et sequi, culpa velit fugit nisi perferendis officiis earum eum temporibus dolore quia! Adipisci explicabo quae id ratione!</div>
+
+      <div class="sidebar">sidebar - Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe temporibus, commodi dolores sapiente, at voluptas corporis aut facilis illum nam ad? At magnam et quod architecto officia adipisci labore iste.</div>
+
+      <div class="main">main - Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Nostrum voluptates explicabo, laudantium unde quae. Iure ullam et nulla, sapiente eligendi officiis magnam obcaecati voluptate culpa dolor incidunt tempora provident pariatur.</div>
+
+      <div class="ads">ads - Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Eaque suscipit dolorum quos hic maiores corrupti odio nesciunt ducimus pariatur tempora sed, esse, incidunt, at dignissimos quia eligendi velit alias fugit.</div>
+
+      <div class="footer">footer - Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Accusamus provident quod corrupti harum autem consectetur minus unde quia velit quibusdam fugit, porro, perferendis ullam quae similique possimus illo magni dolores.</div>
+
+      <div class="item1" style="grid-column: 1 / span 4; border-style: solid; border-color: red;">Item 1 - Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Fuga debitis asperiores eius iure a quasi quas tempora incidunt dolorum facilis, libero magnam blanditiis officia quisquam illum obcaecati, fugiat, id. Quasi.</div>
+
+      <div class="item2" style="grid-column: 5 / span 4; border-style: solid; border-color: red;"> Item 2 - Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio vitae sunt at, obcaecati eum numquam. Voluptas eligendi fugiat, magnam sapiente nobis? Voluptatibus maxime itaque eligendi eaque cupiditate corporis expedita perferendis?</div>
+
+      <div class="item3" style="grid-column: 9 / span 4; border-style: solid; border-color: red;">Item 3 - Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Dolores iusto aperiam quibusdam quos error in aut quaerat voluptate ab inventore. Fugit, vero possimus officiis aut laboriosam labore inventore iure sint!</div>
+
+    </div>
+  </body>
+</html>

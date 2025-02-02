@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container {
+		  display: grid;
+		  grid-template-columns: repeat(12, 1fr);
+		  grid-template-rows: repeat(12, 1fr);
+		  gap: 10px;
+		}
+
+		.col {
+			padding: 25px;
+			border-style: solid;
+			background-color: yellow;
+		}
+
+		.one {
+			grid-column: span 12;
+		}
+
+		.two {
+		  grid-column: span 8;
+		}
+
+		.three {
+			grid-column: span 2;
+			grid-row: span 12;
+		}
+
+		.four {
+			grid-column: span 2;
+		}
+
+		.five {
+			grid-column: span 6;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+	  <div class="col one">One - spans 12 columns</div>
+
+	  <div class="col two">Two - spans 8 columns </div>
+	  
+	  <div class="col three">Three - spans 2 columns and 12 rows</div>
+
+	  <div class="col four">Four - spans 2 columns</div>
+
+	  <div class="col five">Five - spans 6 columns</div>  
+	</div>
+
+</body>
+</html>
