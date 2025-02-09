@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+		h1, h2 , p{
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+		}
+		.header {
+			display: flex;
+			padding: 25px;
+			justify-content: space-between;
+			align-items: center;
+			flex-grow: 1;
+			background-color: paleturquoise;
+		}
+		.bodyContent {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			flex-grow: 12;
+			background-color: aliceblue;
+		}
+		.content {
+			margin: 20px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+			 			 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			padding: 50px;
+		}
+
+		.bodyContent .content {
+			text-align: center;
+		}
+
+		.theTeam {
+			display: flex;
+			justify-content: center;
+		}
+
+		.footer {
+			display: flex;
+			justify-content: space-around;
+			flex-grow: 1;
+			background-color: peachpuff;
+		}
+
+		.footer .content {
+			box-shadow: none;
+			border: none;
+		}
+
+		@media screen and (max-width: 800px) {
+			.header, .footer, .theTeam{
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="logo"><h1>Welcome to my site</h1></div>
+			<div class="links">
+				<a href="#">Home</a>
+				<a href="#">Home</a>
+				<a href="#">Home</a>
+				<a href="#">Home</a>
+			</div>
+		</div>
+		<div class="bodyContent">
+		<h1>About the Company</h1>
+			<div class="content">
+				<h2>About Us</h2>
+				<img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 500px; height:  auto;">
+				<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nulla sint quas cum illum temporibus dolores, quos tenetur et, doloribus officiis, architecto nam. Nobis eius debitis nam saepe voluptates accusamus?</p>
+			</div>
+			<div class="content">
+				<h2>Work Culture</h2>
+				<img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" style="width: 500px; height:  auto;">
+				<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nulla sint quas cum illum temporibus dolores, quos tenetur et, doloribus officiis, architecto nam. Nobis eius debitis nam saepe voluptates accusamus?</p>
+			</div>
+			<div class="content">
+				<h2>Vision</h2>
+				<img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""
+				style="width: 500px; height:  auto;">
+				<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nulla sint quas cum illum temporibus dolores, quos tenetur et, doloribus officiis, architecto nam. Nobis eius debitis nam saepe voluptates accusamus?</p>
+			</div>
+			<h1>The Team</h1>
+			<div class="theTeam">
+				<div class="content">
+					<h1>Person 1</h1>
+					<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Similique error, delectus. Itaque temporibus quibusdam corporis. Cumque molestiae ea, ad? Cumque minima dolore maxime, natus eligendi, architecto iure neque soluta provident.</p>
+				</div>
+				<div class="content">
+					<h1>Person 1</h1>
+					<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Similique error, delectus. Itaque temporibus quibusdam corporis. Cumque molestiae ea, ad? Cumque minima dolore maxime, natus eligendi, architecto iure neque soluta provident.</p>
+				</div>
+				<div class="content">
+					<h1>Person 1</h1>
+					<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Similique error, delectus. Itaque temporibus quibusdam corporis. Cumque molestiae ea, ad? Cumque minima dolore maxime, natus eligendi, architecto iure neque soluta provident.</p>
+				</div>
+				<div class="content">
+					<h1>Person 1</h1>
+					<p>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Similique error, delectus. Itaque temporibus quibusdam corporis. Cumque molestiae ea, ad? Cumque minima dolore maxime, natus eligendi, architecto iure neque soluta provident.</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="content">
+				<h1>Contact Details</h1>
+				<ul>
+					<li><a href="#">02002020</a></li>
+					<li><a href="#">02002020</a></li>
+					<li><a href="#">02002020</a></li>
+					<li><a href="#">02002020</a></li>
+					<li><a href="#">02002020</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<h1>About Us</h1>
+				<ul>
+					<li><a href="#">02002020</a></li>
+					<li><a href="#">02002020</a></li>
+					<li><a href="#">02002020</a></li>
+					<li><a href="#">02002020</a></li>
+				</ul>
+			</div>
+			<div class="content">
+				<h1>Affiliated Brands</h1>
+				<ul>
+					<li><a href="#">02002020</a></li>
+					<li><a href="#">02002020</a></li>
+					<li><a href="#">02002020</a></li>
+					<li><a href="#">02002020</a></li>
+					<li><a href="#">02002020</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

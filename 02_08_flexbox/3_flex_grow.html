@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			background-color: aliceblue;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+		}
+		.element {
+			width: 250px;
+			padding: 25px;
+			background-color: pink;
+			border: 1px solid black;
+		}
+		.el-3 {
+			flex-grow: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="element el-1">Element 1</div>
+		<div class="element el-2">Element 2</div>
+		<div class="element el-3">Element 3 (Flex Grow: 1)</div>
+		<div class="element el-4">Element 4 </div>
+		<div class="element el-5">Element 5 </div>
+	</div>
+</body>
+</html>
